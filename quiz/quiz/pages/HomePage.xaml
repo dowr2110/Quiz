@@ -1,0 +1,19 @@
+﻿<Page x:Class="quiz.pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:quiz.pages"
+      xmlns:vm="clr-namespace:quiz.viewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+    <Page.DataContext>
+        <vm:HomePageViewModel/>
+    </Page.DataContext>
+
+
+    <Grid Background="#FFCDF0BF" Width="800" Height="450">
+        <Button  Content="Начать" MinHeight="36" Command="{Binding StartCommand}" Margin="230,200"  />
+    </Grid>
+</Page>
